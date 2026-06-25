@@ -499,12 +499,16 @@ body {
   border-radius: var(--border-radius);
   border: 1px solid transparent;
   cursor: pointer;
-  transition: all var(--transition-fast);
+  transition: all 0.15s ease;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
   text-decoration: none;
+}
+
+.btn:active {
+  transform: scale(0.96);
 }
 
 .btn-primary {
@@ -514,7 +518,8 @@ body {
 
 .btn-primary:hover {
   background-color: var(--primary-hover);
-  box-shadow: var(--shadow-sm);
+  box-shadow: 0 4px 12px rgba(194, 109, 56, 0.25);
+  transform: translateY(-1px);
 }
 
 .btn-primary:disabled {
